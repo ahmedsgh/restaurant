@@ -12,7 +12,7 @@
                                     src="{{ $item['image'] ? asset('storage/' . $item['image']) : asset('images/placeholder.svg') }}" alt="{{ $item['name'] }}">
                                 <div class="ml-4">
                                     <h4 class="text-lg font-bold text-gray-900 dark:text-white">{{ $item['name'] }}</h4>
-                                    <p class="text-gray-500 dark:text-gray-400">${{ $item['price'] }}</p>
+                                    <p class="text-gray-500 dark:text-gray-400">{{ $item['price'] }} DH</p>
                                 </div>
                             </div>
                             <div class="flex items-center space-x-4">
@@ -35,7 +35,7 @@
                     @endforeach
                 </ul>
                 <div class="p-4 sm:p-6 bg-gray-50 dark:bg-gray-900 flex justify-between items-center">
-                    <span class="text-xl font-bold text-gray-900 dark:text-white">{{ __('all.Total') }}: ${{ $total }}</span>
+                    <span class="text-xl font-bold text-gray-900 dark:text-white">{{ __('all.Total') }}: {{ $total }} DH</span>
                     <a href="{{ route('checkout') }}" wire:navigate
                         class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700">
                         {{ __('all.Proceed to Checkout') }}

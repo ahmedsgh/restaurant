@@ -13,7 +13,7 @@ class Index extends Component
     public function render()
     {
         $this->orders = \App\Models\Order::with('items.product')->latest()->get();
-        return view('livewire.admin.orders.index')->layout('layouts.app');
+        return view('livewire.admin.orders.index')->layout('layouts.admin', ['title' => __('all.Orders')]);
     }
 
     public function viewOrder($id)

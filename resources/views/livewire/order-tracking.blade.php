@@ -41,13 +41,13 @@
                                             <span class="text-gray-900 dark:text-white">{{ $item->product->name }}</span>
                                             <span class="ml-2 text-gray-500 text-sm">x{{ $item->quantity }}</span>
                                         </div>
-                                        <span class="text-gray-900 dark:text-white">${{ $item->price }}</span>
+                                        <span class="text-gray-900 dark:text-white">{{ $item->price }} DH</span>
                                     </li>
                                 @endforeach
                             </ul>
                             <div class="mt-4 flex justify-between border-t border-gray-200 dark:border-gray-700 pt-4">
                                 <span class="font-bold text-gray-900 dark:text-white">{{ __('all.Total') }}</span>
-                                <span class="font-bold text-gray-900 dark:text-white">${{ $order->total }}</span>
+                                <span class="font-bold text-gray-900 dark:text-white">{{ $order->total }} DH</span>
                             </div>
                         </div>
 

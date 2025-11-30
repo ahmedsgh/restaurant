@@ -26,7 +26,7 @@
                                     </div>
                                     <div class="flex-1 pt-2 flex items-end justify-between">
                                         <p class="mt-1 text-sm font-medium text-gray-900 dark:text-white">
-                                            ${{ $item['price'] }} x {{ $item['quantity'] }}</p>
+                                            {{ $item['price'] }} DH x {{ $item['quantity'] }}</p>
                                     </div>
                                 </div>
                             </li>
@@ -35,7 +35,7 @@
                     <dl class="border-t border-gray-200 dark:border-gray-700 py-6 px-4 sm:px-6 space-y-6">
                         <div class="flex items-center justify-between">
                             <dt class="text-base font-medium text-gray-900 dark:text-white">{{ __('all.Total') }}</dt>
-                            <dd class="text-base font-medium text-gray-900 dark:text-white">${{ $total }}</dd>
+                            <dd class="text-base font-medium text-gray-900 dark:text-white">{{ $total }} DH</dd>
                         </div>
                     </dl>
                 </div>

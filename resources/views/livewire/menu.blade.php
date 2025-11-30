@@ -34,7 +34,7 @@
                     <div class="p-6">
                         <div class="flex justify-between items-baseline">
                             <h3 class="text-xl font-semibold text-gray-900 dark:text-white">{{ $product->name }}</h3>
-                            <span class="text-lg font-bold text-orange-600">${{ $product->price }}</span>
+                            <span class="text-lg font-bold text-orange-600">{{ $product->price }} DH</span>
                         </div>
                         <p class="mt-2 text-gray-600 dark:text-gray-400 text-sm line-clamp-2">
                             {{ $product->description }}

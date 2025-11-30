@@ -27,7 +27,7 @@ class Index extends Component
     public function render()
     {
         $this->categories = \App\Models\Category::all();
-        return view('livewire.admin.categories.index')->layout('layouts.app');
+        return view('livewire.admin.categories.index')->layout('layouts.admin', ['title' => __('all.Categories')]);
     }
 
     public function create()

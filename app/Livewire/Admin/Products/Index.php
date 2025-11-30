@@ -32,7 +32,7 @@ class Index extends Component
     {
         $this->products = \App\Models\Product::with('category')->get();
         $this->categories = \App\Models\Category::where('is_active', true)->get();
-        return view('livewire.admin.products.index')->layout('layouts.app');
+        return view('livewire.admin.products.index')->layout('layouts.admin', ['title' => __('all.Products')]);
     }
 
     public function create()

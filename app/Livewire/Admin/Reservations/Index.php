@@ -11,7 +11,7 @@ class Index extends Component
     public function render()
     {
         $this->reservations = \App\Models\Reservation::latest()->get();
-        return view('livewire.admin.reservations.index')->layout('layouts.app');
+        return view('livewire.admin.reservations.index')->layout('layouts.admin', ['title' => __('all.Reservations')]);
     }
 
     public function updateStatus($id, $status)
